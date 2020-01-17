@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require_relative '../lib/cli.rb'
+require_relative '../lib/scraper.rb'
+
+Pulldata.new.scrape #HAVING THIS HERE, I KNOW THAT DATA IS SCRAPED ONLY ONCE, PUSHED TO COOKIE CLASS @@ALL AND I'M DONE WITH SCRAPER CLASS
+Cli.the_menu #DISPLAY USER INTERFACE
