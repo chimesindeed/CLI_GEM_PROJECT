@@ -1,4 +1,4 @@
-require_relative './lib/alotacookies/verion.rb'
+require_relative './lib/alotacookies/version.rb'
 
 Gem::Specification.new do |spec|
   spec.name          = "alotacookies"
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   require 'rake'
-  spec.files         = FileList['lib/*.rb', 'bin/*','[A-Z]*', 'test/*'].to_a
+  spec.files         = FileList['lib/*.rb', 'lib/alotacookies/*.rb', 'bin/*', '[A-Z]*', 'test/*'].to_a
   spec.bindir        = "bin"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
