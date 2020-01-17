@@ -1,8 +1,6 @@
-# Alotacookies
+# Alotacookies -scraper app
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/alotacookies`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Simple scraper app created with Ruby.  Scrapes  data from Wiki site 
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Press "L" to Get List of Cookies.  Enter Cookie number for country of origin and Cookie description.
 
 ## Development
 
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/alotacookies.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[CHIMESINDEED]/alotacookies.
 
 
 ## License
