@@ -1,3 +1,4 @@
+require_relative './alotacookies/version.rb'
 require_relative "./alotacookies.rb"
 require 'pry'
 require 'nokogiri'

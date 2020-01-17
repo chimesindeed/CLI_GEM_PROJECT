@@ -1,4 +1,4 @@
-
+require_relative './alotacookies/version.rb'
 
 module Alotacookies
 class Cookie

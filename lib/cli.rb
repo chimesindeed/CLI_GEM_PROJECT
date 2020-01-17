@@ -1,4 +1,6 @@
+require_relative './alotacookies/version.rb'
 require_relative './alotacookies.rb'
+
 
 class Cli
 
