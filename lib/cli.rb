@@ -1,5 +1,4 @@
-require_relative './alotacookies/version.rb'
-require_relative './alotacookies.rb'
+require_relative '../config/environment.rb'
 
 
 class Cli
