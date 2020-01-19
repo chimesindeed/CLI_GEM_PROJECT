@@ -28,9 +28,10 @@ class Cookie
   #GETS CALLED FROM CLI.RB TO DISPLAY COOKIE NAMES TO USER AS NUMBERED OPTIONS
   def self.display_names
     all.each_with_index {|cookie, index| puts "#{index +1}) " + "#{cookie.name}"}
+    puts "Enter number of cookie to get cookie origin and description:"
   end
   
-  #GETS CALLED FROM CLI.RB PROMPTING USER FOR 
+  #GETS CALLED FROM CLI.RB GIVING USER COOKIE INFO 
   def self.display_info(input = gets.chomp)
     if (1..all.count).member?(input.to_i) #IF MORE COOKIES GET ADDED TO WIKI SITE WE'RE SAFE WITH ALL.COUNT AS MAX
       10.times {puts ""}
