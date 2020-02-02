@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 require_relative '../config/environment.rb'
 
-Pulldata.new.scrape #HAVING THIS HERE, I KNOW THAT DATA IS SCRAPED ONLY ONCE, PUSHED TO COOKIE CLASS @@ALL AND I'M DONE WITH SCRAPER CLASS
-Cli.the_menu #DISPLAY USER INTERFACE
+Alotacookies::Cli.new #Instantiate new instance of CLI CLASS
