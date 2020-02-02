@@ -1,5 +1,6 @@
 require_relative '../config/environment.rb'
-puts "scraper.rb has been run"
+
+module Alotacookies
 class Pulldata
   def scrape
     #Open gets HTML which Nokogiri::HTML parses into array of XML Objects
@@ -31,3 +32,4 @@ class Pulldata
   end #SELF.SCRAPE METHOD
   
  end #PULLDATA CLASS
+end

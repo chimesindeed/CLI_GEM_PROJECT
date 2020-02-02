@@ -1,5 +1,5 @@
 require_relative '../config/environment.rb'
-puts "alotacookies has been run"
+
 module Alotacookies
 class Cookie
   #Cookie.create GETS CALLED FROM SCRAPER.RB TO,

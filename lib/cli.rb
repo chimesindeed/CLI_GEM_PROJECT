@@ -1,12 +1,11 @@
 require_relative '../config/environment.rb'
-puts "cli.rb has been called"
 
+module Alotacookies
 class Cli
 
   def initialize
-  
-  Pulldata.new.scrape
-  self.class.the_menu
+    Pulldata.new.scrape
+    self.class.the_menu
   end
 
   def self.the_menu
@@ -50,3 +49,4 @@ class Cli
   end #METHOD
   
 end #CLASS
+end
