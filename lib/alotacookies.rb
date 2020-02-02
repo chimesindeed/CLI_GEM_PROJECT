@@ -1,5 +1,5 @@
 require_relative '../config/environment.rb'
-
+puts "alotacookies has been run"
 module Alotacookies
 class Cookie
   #Cookie.create GETS CALLED FROM SCRAPER.RB TO,
@@ -31,6 +31,18 @@ class Cookie
     puts "Enter number of cookie to get cookie origin and description:"
   end
   
+  def self.find_by_name(input)    
+result = nil
+@@all.each{|cookie|
+	puts "cookie name is #{cookie.name.upcase}"
+	puts "#{input.upcase}"
+	if cookie.name.upcase.strip == input.upcase.strip
+	result = cookie.name
+	end
+	}
+result
+end
+
   #GETS CALLED FROM CLI.RB GIVING USER COOKIE INFO 
   def self.display_info(input = gets.chomp)
     if (1..all.count).member?(input.to_i) #IF MORE COOKIES GET ADDED TO WIKI SITE WE'RE SAFE WITH ALL.COUNT AS MAX

@@ -1,7 +1,13 @@
 require_relative '../config/environment.rb'
-
+puts "cli.rb has been called"
 
 class Cli
+
+  def initialize
+  
+  Pulldata.new.scrape
+  self.class.the_menu
+  end
 
   def self.the_menu
     

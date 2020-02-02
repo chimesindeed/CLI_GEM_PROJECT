@@ -1,8 +1,5 @@
 require_relative '../config/environment.rb'
-require 'pry'
-require 'nokogiri'
-require 'open-uri'
-
+puts "scraper.rb has been run"
 class Pulldata
   def scrape
     #Open gets HTML which Nokogiri::HTML parses into array of XML Objects
