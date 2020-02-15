@@ -25,7 +25,7 @@ class Pulldata
       unless cookie_description == nil || cookie_origin.split.count > 6
   
     #NOW WE HAVE ALL THE DATA WE NEED TO INSTANTIATE EACH COOKIE WITH A NAME, ORIGIN AND DESCRIPTION 
-    Alotacookies::Cookie.create(cookie_name, cookie_origin, cookie_description)  
+    Cookie.create(cookie_name, cookie_origin, cookie_description)  
       end #UNLESS CONDITIONAL
     end #TABLE OF COOKIES.EACH
   
